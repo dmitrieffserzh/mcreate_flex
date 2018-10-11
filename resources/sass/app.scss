@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700&subset=cyrillic');
+/* NORMALIZE CSS >> ================================================================================================= */
+@import 'components/normalize';
+
+img {
+  max-width: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 1530px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: '';;
+}
+
+:focus {
+  outline: 0 !important;
+}
+
+.header {
+  padding: 30px 0;
+  background: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .12);
+  & .container {
+    margin: 30px auto;
+  }
+}
+.section {
+  min-height: 700px;
+  padding: 5rem 0;
+  &__title {
+    //font-size: 2.2rem;
+    font-weight: 400;
+    position: relative;
+    text-transform: uppercase;
+    color: #53585d;
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 1.8rem;
+      height: .25rem;
+      content: '';
+      background: #ff0063;
+    }
+  }
+  &__subtitle {
+    font-size: 13px;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+  }
+}
+
+
+
+
+
+@import 'components/slider/slider';
+@import 'components/slider/slider-theme';
