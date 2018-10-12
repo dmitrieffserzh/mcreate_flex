@@ -201,8 +201,14 @@ img {
   box-sizing: border-box;
 }
 
+html {
+  line-height: 1.6;
+  color: #6b7388;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
 }
 
 .container {
@@ -233,26 +239,57 @@ body {
 }
 
 .header {
-  padding: 30px 0;
-  background: #fff;
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
-          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
 }
 
 .header .container {
-  margin: 30px auto;
+  padding: 15px;
+}
+
+nav ul {
+  display: table;
+  width: 100%;
+  padding: 15px 0;
+}
+
+nav ul > li {
+  display: table-cell;
+  text-align: center;
+}
+
+nav ul > li > a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .section {
   min-height: 700px;
-  padding: 5rem 0;
+}
+
+.section-main {
+  background: url(/images/support_bg_blur.jpg?685a990fbef8aa385359617c0e4955a3) no-repeat center center;
+  background-size: cover;
+  min-height: auto;
+}
+
+.section-main__wrapper {
+  padding: 12rem 0;
+  background: -webkit-gradient(linear, right top, left top, from(#021646), to(rgba(34, 39, 72, 0.7)));
+  background: linear-gradient(to left, #021646 0%, rgba(34, 39, 72, 0.7) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#334263fc', endColorstr='#00254ca3', GradientType=0);
 }
 
 .section__title {
-  font-weight: 400;
+  font-weight: 500;
   position: relative;
   text-transform: uppercase;
-  color: #53585d;
+  color: #111;
 }
 
 .section__title:after {
