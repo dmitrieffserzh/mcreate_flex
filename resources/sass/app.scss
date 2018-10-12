@@ -286,18 +286,21 @@ body {
     & .button-menu {
       & .icon-bar {
         transition: all .3s;
-        &:nth-child(1),
+
         &:nth-child(2),
-        &:nth-child(4),
+
         &:nth-child(5),
         &:nth-child(6),
-        &:nth-child(7),
+
         &:nth-child(8) {
           transition: all .3s;
           background: #ff0063 !important;
         }
 
+        &:nth-child(1),
         &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(7),
         &:nth-child(9) {
           transition: all .3s;
           opacity: .2;
